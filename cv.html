@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+</head>
+
+
+
+<body>
+
+
+    <button id="buttCv" style=" text-align: left; width:100px; height: 30px; background-color: yellowgreen; margin-top: auto; ">
+        Informacoes:<br>
+        <script>
+
+            $("#buttCv").on("mouseenter", function(){
+                console.log("mouse in!")
+                $("#info").toggle();
+                var butt = $("#buttCv");
+                butt.animate({
+                    width:"400px",
+                    height:"100px"
+                    
+                },"slow");
+            });
+
+            $("#buttCv").on("mouseleave", function(){
+                $("#buttCv").stop()
+                console.log("stop funcionou!")
+                console.log("funcionou o leave")
+                $("#info").toggle();
+                var butt = $("#buttCv");
+                butt.stop();
+                butt.animate({
+                    width:"100px",
+                    height:"30px"
+                    
+                },"slow")
+            });
+
+        </script>
+
+        <div id="info" style="text-align: justify; display: none; margin-left: auto; margin-top:auto; ">
+            Nome: Eduardo Costa<br>
+            Idade: 30<br>
+        </div>
+
+    </button>
+    <br><br>
+    <button id="buttCvExp" style=" text-align: left; width: 100px; height: 30px; background-color:yellowgreen; margin-top: auto;">
+        Experiencia:<br>
+        <script>
+    
+            $("#buttCvExp").on("mouseenter", function(){
+                console.log("Funfou!")
+                $("#exp").toggle();
+                $("#buttCvExp").animate({
+                    width:"400px",
+                    height:"200px"
+                        
+                },"slow");
+            });
+    
+            $("#buttCvExp").on("mouseleave", function(){
+                $("#buttCvExp").stop();
+                console.log("funcionous o stop")
+                $("#exp").toggle();
+                $("#buttCvExp").stop();
+                $("#buttCvExp").animate({
+                    width:"100px",
+                    height:"30px"
+                        
+                },"slow")
+            });
+    
+        </script>
+    
+            <div id="exp" style="text-align: left; display: none; margin-left: auto; margin-top:auto; ">
+                Local: Centro Universitario do Estado do Para(CESUPA)<br>
+                Setor: CTIC<br>
+                Descricao: Cuidar e zelar por laboratorios de programacao<br>
+                manutencao e atualizacao de computadores, configurar e utilizar<br>
+                sistemas windows e iOs.<br>
+                <br>
+                Local: Centro Universitario do Estado do Para(CESUPA)<br>
+                Setor: Grupo de Estudo de Tecnologia Assistiva(GETA)<br>
+                Descricao: Pesquisar, auxiliar e apresentar projetos em<br>
+                eventos sobre inovacoes tecnologicas. 
+            </div>
+        
+    </button>
+    <br><br>
+    <button id="butContato" style=" text-align: left; width:100px; height: 30px; background-color: yellowgreen; margin-top: auto;">
+        Contato:<br>
+        <script>
+
+            $("#butContato").on("mouseenter", function(){
+                console.log("Funfou!")
+                $("#contato").toggle();
+                var butt = $("#butContato");
+                butt.animate({
+
+                    width:"400px",
+                    height:"100px"
+                    
+                },"slow");
+            });
+
+            $("#butContato").on("mouseleave", function(){
+                $("#butContato").stop();
+                console.log("funcionou o leave")
+                $("#contato").toggle();
+                $("#butContato").stop();
+                $("#butContato").animate({
+
+                    width:"100px",
+                    height:"30px"
+                    
+                },"slow")
+
+            });
+
+        </script>
+
+        <div id="contato" style="text-align: justify; display: none; margin-left: auto; margin-top:auto; ">
+            Linkedin: Eduardo Costa<br>
+            GitHub: 30<br>
+            Telefone:xxxx-xxxx<br>
+            Email: edu@mail.com<br>
+        </div>
+
+    </button>
+</script>
+</body>
+</html>  
